@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/10241336c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Shmaiter Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <h1>
+              <a href="/portfolio/index.html">
+                <span class="fas fa-code" aria-hidden="true"></span>
+                <span class="logo">sjmr</span>
+              </a>
+            </h1>
+          </li>
+          <li><a href="/portfolio/certifications.html">Certifications</a></li>
+          <li><a href="/portfolio/about.html">About</a></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/shmaiter-morales/"
+              target="_blank"
+            >
+              <span class="fab fa-linkedin" aria-hidden="true"></span>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/shmaiter" target="_blank">
+              <span class="fab fa-github-square" aria-hidden="true"></span>
+              <span class="sr-only">Github</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1F1CfoeINbwTfjmd7dKU-H6OAyXgOWseu/view?usp=sharing"
+              class="button"
+              target="_blank"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="intro">
+      <p class="name">
+        Hi, my name is <span id="fullname">Shmaiter Morales.</span>
+      </p>
+
+      <h2>I am <span class="auto-type"></span></h2>
+    </section>
+
+    <div class="gradient"></div>
+
+    <!-- instructions in JavaScript block -->
+    <div class="section-blue">
+      <section id="projects">
+        <h2>Live Projects</h2>
+
+        <article class="reverse">
+          <div class="text">
+            <h4>01-2024</h4>
+            <h3>Marin's Life</h3>
+            <p class="blackbox">
+              Gallery of pictures and funny stories from marine's life. Which
+              sources came from Unsplash and Tumblr blended together thanks to
+              the beauty of this simple and dynamic website. Using the AWS
+              Management Console (UI), I used a S3 bucket to host our content,
+              and enable static website hosting. Then, add a custom domain to
+              access our website, along with using CloudFront and TLS to secure
+              and distribute the content. Check out the final result
+              <a href="https://marinslife.sjmdev.click/"
+                >Stories from Marin's Life</a
+              >
+            </p>
+            <h4>Technologies used include:</h4>
+            <ul>
+              <li>S3 Buckets</li>
+              <li>Route 53</li>
+              <li>CloudFront</li>
+              <li>AWS Certificate Manager</li>
+            </ul>
+          </div>
+          <img
+            src="./gifs/marinslife.gif"
+            alt="Marine's life gallery pictures and funny stories"
+          />
+        </article>
+
+        <article>
+          <div class="text">
+            <h4>01-2023</h4>
+            <h3>Bloom</h3>
+            <p class="blackbox">
+              Responsive and minimalist online clothes shop. Includes elements
+              like sliders, galleries by category, login and registration form
+              validations. Shooping cart funcionality implements JWT
+              authentication for every user transaction, as well as encryption
+              methods through CryptoJS. Check out the final result
+              <a href="https://bloom-shop-client.onrender.com/">Bloom</a>
+            </p>
+            <h4>Technologies used include:</h4>
+            <ul>
+              <li>React</li>
+              <li>StyledComponents</li>
+              <li>Material UI</li>
+              <li>Redux</li>
+              <li>NodeJS-Express</li>
+              <li>MongoDB</li>
+              <li>Stripe</li>
+            </ul>
+          </div>
+          <img src="./gifs/e-commerce.gif" alt="E Commerce" />
+        </article>
+
+        <article class="reverse">
+          <div class="text">
+            <h4>12-2022</h4>
+            <h3>Pin-It</h3>
+            <p class="blackbox">
+              MERN Stack that allows the user create, save and delete their
+              notes. React hooks on dynamic input readings and validations with
+              Regex inside register and login forms. It maintains valid sessions
+              for every user through JsonWebTokens and server side validations
+              on each request. Server side performance works efficiently
+              implementing a MVC model and a storage management system with
+              MongoDB. Check out the final result
+              <a href="https://pinit-notes.onrender.com/">Pin-It</a>
+            </p>
+            <h4>Technologies used include:</h4>
+            <ul>
+              <li>React</li>
+              <li>Axios</li>
+              <li>Material UI</li>
+              <li>Node</li>
+              <li>Express</li>
+              <li>JWT</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+          <img src="./gifs/snips-wall.gif" alt="Notes Keeper" />
+        </article>
+
+        <article>
+          <div class="text">
+            <h4>10-2022</h4>
+            <h3>Pokematch</h3>
+
+            <p class="blackbox">
+              Classic memory game using the PokeAPI to feed every card's data.
+              The project applies a grid layout to organize the elements and
+              bring a responsive web desing for the element on different screen
+              sizes. Some perks bring personality to the site through mouse
+              movement and proximity to elements. Check out the final result
+              <a href="https://shmaiter.github.io/pokematch/" target="_blank"
+                >Pokematch</a
+              >
+            </p>
+
+            <h4>Technologies used include:</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <img src="./gifs/Pokematch.gif" alt="Pokemon Memory Game" />
+        </article>
+      </section>
+    </div>
+
+    <div class="gradient"></div>
+
+    <footer>
+      <h2>Contact me</h2>
+
+      <p>
+        I'm always interested in hearing about new projects or collaborations
+        with any one from the community.
+      </p>
+      <p>Also if you're interested in a custom made website.</p>
+
+      <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/shmaiter-morales/"
+            target="_blank"
+            aria-hidden="true"
+          >
+            <span class="fab fa-linkedin" aria-hidden="true"></span>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/shmaiter"
+            target="_blank"
+            aria-hidden="true"
+          >
+            <span class="fab fa-github-square" aria-hidden="true"></span>
+            <span class="sr-only">Github</span>
+          </a>
+        </li>
+      </ul>
+      <p><small>&copy; Shmaiter Morales 2024.</small></p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
